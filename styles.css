@@ -138,6 +138,20 @@ figcaption { font-size: 14px; color: var(--muted); margin-top: 8px; }
 .comp-header { background: #eaf0f7; border-top: none; font-weight: 700; color: var(--navy); font-size: 13px; text-transform: uppercase; letter-spacing: .06em; }
 .comp-name { font-weight: 700; color: var(--navy); }
 .download { margin: 24px 0 0; }
+.ws-hint { display: none; font-size: 14px; color: var(--maize); margin: -12px 0 10px; }
+@media (max-width: 820px) { .ws-hint { display: block; } .ws-scroll { padding: 10px; } }
+.ws-scroll { overflow-x: auto; background: #fff; border-radius: var(--radius); padding: 20px; -webkit-overflow-scrolling: touch; }
+.worksheet { width: 100%; min-width: 860px; border-collapse: collapse; font-family: "Times New Roman", Times, serif; color: #000; font-size: 14.5px; line-height: 1.4; }
+.worksheet th, .worksheet td { border: 1px solid #000; padding: 8px 10px; vertical-align: middle; }
+.worksheet thead th { font-weight: 700; text-align: center; font-size: 15.5px; }
+.worksheet thead th span { font-weight: 400; font-size: 14px; }
+.worksheet thead .ws-dev, .worksheet thead .ws-pro, .worksheet thead .ws-exe { font-weight: 400; font-size: 14.5px; width: 90px; }
+.worksheet .ws-dev { background: #d9d9d9; }
+.worksheet .ws-pro { background: #8eaadb; }
+.worksheet .ws-exe { background: #2f6fc6; color: #000; }
+.worksheet tbody th { font-weight: 400; text-align: center; white-space: nowrap; font-size: 15.5px; }
+.worksheet .ws-x { text-align: center; font-size: 26px; color: #c00000; font-family: var(--sans); font-weight: 300; }
+.worksheet tbody td:nth-child(5), .worksheet tbody td:nth-child(6) { font-size: 13.5px; }
 .smart-title { font-family: var(--serif); font-size: 30px; margin: 64px 0 20px; }
 .smart-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
 .smart { background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.15); border-radius: var(--radius); padding: 26px; }
